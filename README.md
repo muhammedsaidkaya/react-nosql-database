@@ -1,5 +1,5 @@
-## .env Oluşturmak gerekiyor root klasöründe
-.env içinde SKIP_PREFLIGHT_CHECK=true olması lazım.
+## .env must be created.
+inside .env , SKIP_PREFLIGHT_CHECK=true
 
 
 # Getting Started with Create React App
