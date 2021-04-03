@@ -9,6 +9,50 @@ export class ContextProvider extends Component {
         super(props);
         this.state = {
             trigger: new Trigger(),
+            isJSON: true,
+            undoCommandsCount:0,
+            redoCommandsCount:0,
+            setUndoCommandsCount:  (value) => {
+                this.setState(prevState => {
+                    return {
+                        ...prevState,
+                        undoCommandsCount:value
+                    };
+                });
+            },
+            setRedoCommandsCount:  (value) => {
+                this.setState(prevState => {
+                    return {
+                        ...prevState,
+                        redoCommandsCount:value
+                    };
+                });
+            },
+            setIsJSON:  (value) => {
+                this.setState(prevState => {
+                    return {
+                        ...prevState,
+                        isJSON: value
+                    };
+                });
+            },
+            setCollection: (collection) => {
+                this.setState(prevState => {
+                    return {
+                        ...prevState,
+                        collection,
+                        document: undefined
+                    };
+                });
+            },
+            setDocument: (document) => {
+                this.setState(prevState => {
+                    return {
+                        ...prevState,
+                        document
+                    };
+                });
+            },
         }
     }
 
