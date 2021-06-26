@@ -1,0 +1,11 @@
+version: '3'
+
+services: 
+    local-firestore:
+        build: 
+            context: .
+            dockerfile: Dockerfile
+        image: uzumlukek/local-firestore
+        ports: 
+            - '3000:3000'
+        
