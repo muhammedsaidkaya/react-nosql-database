@@ -10,7 +10,7 @@ docker-compose up --build <br/>
 
 <b> You can make a demo of project. </b> <br/>
 
-Live: http://deneme-env.eba-wgat2esi.eu-central-1.elasticbeanstalk.com/ <br/>
+Live: http://ec2-3-68-222-206.eu-central-1.compute.amazonaws.com/ <br/>
 
 <b> You can see the images of project. </b> <br/>
 
