@@ -8,9 +8,19 @@ git clone https://github.com/muhammedsaidkaya/react-nosql-database-demo.git <br/
 cd react-nosql-database-demo <br/>
 docker-compose up --build <br/>
 
-<b> You can make a demo of project. </b> <br/>
 
-Live: http://ec2-3-68-222-206.eu-central-1.compute.amazonaws.com/ <br/>
+<b> You can make a demo of project on AWS EC2 Instance </b> <br/>
+
+Live: http://load-balancer-said-1025287615.eu-central-1.elb.amazonaws.com/ <br/>
+
+<b>  The project deployed the instance by following script. </b> <br/>
+
+#!/bin/bash -ex <br/>
+curl -fsSL https://get.docker.com -o get-docker.sh <br/>
+sh get-docker.sh <br/>
+sudo usermod -aG docker $(whoami) <br/>
+sudo docker container run -p 80:3000 -d uzumlukek/local-firestore:testing <br/>
+
 
 <b> You can see the images of project. </b> <br/>
 
