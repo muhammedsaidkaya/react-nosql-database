@@ -1,3 +1,8 @@
+
+<p>React application which is document-based NoSQL database demo that stores data to local storage. ( Cloud Firestore Demo ). Command Pattern for encapsulating CRUD requests on any document and by using stack of requests, undoable redoable operations created and collections are committed, extracted (XML, JSON) </p>Hacettepe University, Bachelor's Degree, Computer Engineering - Design Patterns Course Term Project <br/> <br/> 
+
+<b>Introduction: </b>  https://www.youtube.com/watch?v=P5j-L-Bs5AY <br/>
+
 <b>You can download image of this project in the below link. </b> <br/>
 
 Image: https://hub.docker.com/r/uzumlukek/local-firestore <br/>
