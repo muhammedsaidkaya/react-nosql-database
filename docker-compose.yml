@@ -5,7 +5,7 @@ services:
         build: 
             context: .
             dockerfile: Dockerfile
-        image: uzumlukek/local-firestore
+        image: uzumlukek/local-firestore:testing
         ports: 
             - '3000:3000'
         
