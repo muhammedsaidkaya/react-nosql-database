@@ -27,8 +27,6 @@ CMD [ "npm", "start" ]
 ```bash
 git clone https://github.com/muhammedsaidkaya/react-nosql-database-demo.git
 cd react-nosql-database-demo
-.
-.
 docker-compose up --build
 ```
 <hr/>
