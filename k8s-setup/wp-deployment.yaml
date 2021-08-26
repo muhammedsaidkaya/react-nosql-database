@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wp-deployment
+  labels:
+    app: wp-app
+    type: client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: wp-app
+      type: client
+  template:
+    metadata:
+      name: wp-pod
+      labels:
+        app: wp-app
+        type: client
+    spec:
+      containers:
+      - name: wp-container
+        image: uzumlukek/local-firestore:testing
+        ports:
+        - containerPort: 3000
