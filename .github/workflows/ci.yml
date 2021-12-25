@@ -20,7 +20,7 @@ jobs:
           echo "Docker Login"
           docker login -u $DOCKER_HUB -p $DOCKER_HUB_KEY
           echo "Running build..."
-          docker build . -t uzumlukuk/nosql-database
+          docker build . -t uzumlukek/nosql-database
           echo "Pushing image..."
-          docker push uzumlukuk/nosql-database
+          docker push uzumlukek/nosql-database
           echo "Done!"
